@@ -128,3 +128,119 @@ button:hover{
 }
 
 }
+
+/* ===========================
+   DASHBOARD
+=========================== */
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:260px;
+    background:#111827;
+    color:white;
+    padding:30px 20px;
+    box-shadow:4px 0 20px rgba(0,0,0,.25);
+}
+
+.sidebar h2{
+    color:#22c55e;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sidebar li:hover,
+.sidebar .active{
+    background:#16a34a;
+}
+
+.main-content{
+    flex:1;
+    padding:40px;
+    background:#0f172a;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+header h1{
+    color:white;
+}
+
+.profile{
+    background:#1e293b;
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    border-radius:16px;
+    padding:25px;
+    color:white;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,.35);
+}
+
+.card h3{
+    color:#94a3b8;
+    margin-bottom:15px;
+}
+
+.card h2{
+    font-size:34px;
+    color:#22c55e;
+}
+
+.chart-box{
+    margin-top:35px;
+    background:#1e293b;
+    border-radius:16px;
+    padding:25px;
+}
+
+.chart-box h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.chart-placeholder{
+    height:300px;
+    border:2px dashed #334155;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#94a3b8;
+    font-size:22px;
+}
